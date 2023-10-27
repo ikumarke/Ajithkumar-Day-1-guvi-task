@@ -1,0 +1,93 @@
+Task 1:
+
+1...........................................................
+
+package org.nelli;
+
+public class Task1 {
+	
+	public void traskday1(int a, int b, int c, int d) {
+		// TODO Auto-generated method stub
+		
+		if (a>=c && b>=d) {
+			System.out.println("a and b values are greater than c and d");
+		}else {
+			System.out.println("a and b are not greater than c and d :");
+		}
+	}
+	
+
+}
+
+package org.nelli;
+
+public class Exten extends Task1{
+
+	public Exten() {
+		// TODO Auto-generated constructor stub
+		System.out.println("constructor");
+	}
+	@Override
+	public void traskday1(int a, int b, int c, int d) {
+		// TODO Auto-generated method stub
+		super.traskday1(a, b, c, d);
+	}
+	public static void main(String[] args) {
+		Task1 t = new Task1();
+ t.traskday1(10, 20, 30, 40);
+ System.out.println("day 1 task ");
+	
+	}
+}
+
+
+2................................................................
+
+
+int f = 80;
+ 
+ if ( f % 2 == 0 ) {
+	 System.out.println(f + " THE number is even");}
+	 else {
+		System.out.println(f + " the number is odd");
+
+3................................................................
+
+char g ;
+	
+	for ( g = 'A'; g <= 'z'; g++) {
+		System.out.print(" "+ g ); // to print in vertical
+               // System.out.println(" "+ g ); // to print in horizontal
+	}
+4................................................................
+
+package org.variable;
+
+public class Strin {
+public static void main(String[] args) {
+	String s = "Ajithkumar";
+	String a = null;
+	boolean empty = s.isEmpty();
+	System.out.println(empty);
+	//boolean empty2 = a.isEmpty();
+	//System.out.println(empty2);
+	int length = s.length();
+	System.out.println(length);
+}
+
+}
+5................................................................
+
+package org.variable;
+
+public class Strin {
+public static void main(String[] args) {
+	
+	
+	for (int i = 1; i <= 10; i++) {
+		System.out.println("welcome to guvi");
+		
+	}
+}
+
+}
