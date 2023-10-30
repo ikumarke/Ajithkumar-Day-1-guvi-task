@@ -1,0 +1,88 @@
+Task 2
+
+1.......................................................
+package org.all;
+
+import java.util.Scanner;
+
+public class palidrom {
+	  public static void main(String[] args) {
+		     
+		    System.out.print("Enter any string : ");
+		    Scanner n =new Scanner(System.in);
+		    
+		    // First string
+		    String origString = n.nextLine();
+		     
+		    // Reverse string
+		    String reverseString = new StringBuilder(origString).reverse().toString();
+		     
+		    
+		    if (origString.equals(reverseString)) {
+		      System.out.println("String is a palindrome.");
+		    } else {
+		      System.out.println("String is not a palindrome.");
+		    }
+	  }}
+
+2.........................................................
+
+package org.all;
+
+import java.util.Scanner;
+
+public class palidrom {
+	  public static void main(String[] args) {
+		     
+		    System.out.print(" giving string  ");
+		    Scanner n =new Scanner(System.in);
+		    
+		   
+		    String og = n.nextLine();
+		    System.out.println(og);
+		     
+		
+		    String reversedString = "";
+		    
+		    for(int i = og.length()-1; i>=0; i--){
+		      reversedString = reversedString + og.charAt(i);
+		    }
+		    
+		    System.out.print("The reversed string of the '"+og+"' is: " );
+		    System.out.println(reversedString);
+	  }}
+
+(giving string  ajith
+ajith
+The reversed string of the 'ajith' is: htija)
+
+3.........................................................
+
+package org.s;
+
+import java.util.Scanner;
+
+public class Numberpattern {
+	
+	    public static void main(String [] args)
+	    {
+	        
+	        Scanner s = new Scanner(System.in);
+	       
+	        System.out.println("Enter the value of 'n' ");
+	        int n = s.nextInt();
+	      
+	        for (int i = 1; i <= n; i++) 
+	        {
+	            for (int j = 1; j <= i; j++) 
+	            {
+	                System.out.print(j);
+	            }
+	            System.out.println(", ");
+	        }             
+	    }
+	}
+4.............................................................
+
+
+
