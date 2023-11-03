@@ -1,0 +1,110 @@
+
+Task 1 : OOPS conceprt
+
+1........................................................................
+
+
+	public void Persondetails(String name, int age) {
+		// TODO Auto-generated method stub
+		this.name=name;
+		this.age=age;	
+System.out.println("my name is " + name );
+System.out.println("my age is "+ age);
+	}
+	public String getName() {
+		return name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public void persondetails(int rollnumber) {
+		// TODO Auto-generated method stub
+System.out.println(rollnumber);
+
+	}
+
+}
+
+
+public class Person2 extends Person {
+	@Override
+	public void setName(String name) {
+		// TODO Auto-generated method stub
+		super.setName(name);
+		System.out.println(name);
+	}
+	@Override
+	public void setAge(int age) {
+		// TODO Auto-generated method stub
+		super.setAge(age);
+		System.out.println(age);
+	}
+	
+	public static void main(String[] args) {
+		Person2 p = new Person2();
+		p.setName("Ajithkumar");
+		p.setAge(25);
+		Person n = new Person();
+		n.persondetails(32);
+		n.Persondetails("Sugumaran",23);
+	}
+	
+}
+
+2..................................................................
+
+
+public class Employee {
+	
+	private int ID;
+	private String name;
+	private double salary;
+	
+	public void riseSalary(int ID, String name, double salary) {
+		// TODO Auto-generated method stub
+this.ID=ID;
+this.name=name;
+this.salary=salary;
+System.out.println("My ID is " + ID );
+System.out.println("My name is " + name );
+System.out.println("My salary per month is " + salary ); }
+
+	public double getSalary() {
+		return salary;
+	}
+	public double CalculateSalary(double bonus) {
+		return getSalary()+bonus;
+	}
+	
+	public static void main(String[] args) {
+		Employee e = new Employee();
+		e.riseSalary(1151, "Ajithkumar", 18000);
+		System.out.println(e.CalculateSalary(3000));
+
+}
+	
+3.............................................................................
+
+public class Circle {
+	double radius;
+
+	public void circumfrance() {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void circumfrance(double radius) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+
+
