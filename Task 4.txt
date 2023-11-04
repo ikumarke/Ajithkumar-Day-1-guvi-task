@@ -1,0 +1,98 @@
+Task 4
+
+1...................................................
+Access Modifiers:
+ 1. Public - public is global level access
+ 2. Private - private is a class level access
+ 3. protect - Protect is package level access 
+ 4. Default - default is a normal 
+
+2....................................................
+Exception and Error
+
+Exception: when exception occurs program will terminate at the time itsself, it can be handeled 
+
+Error : error cannot be handled. 
+
+3....................................................
+Checked Exception and Unchecked Exception:
+
+Checked Exception:
+when exception occurs while we writing a code are Checked exceptions
+eg:
+I/O exception
+filenotfound exception
+classnotfoundexception
+SQL exception 
+
+Unchecked Exception:
+when exception occurs after we run the code are Unchecked exception
+eg:
+arithmatic exception, stringindexoutofbound exception, numberformat, array outofbound, nullpointer exceptions
+
+4..............................................................
+import java.util.Scanner;
+
+public class Task4 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Getting input from the user :" );
+		int nextInt = sc.nextInt();
+		System.out.println(nextInt);
+		int nextInt2 = sc.nextInt();
+		System.out.println(nextInt2);
+		
+		System.out.println("Dividing both the integers");
+		System.out.println("Final value = "+nextInt/nextInt2);
+		
+		try {
+int finalvalue = nextInt/nextInt2;	
+System.out.println(finalvalue);
+if (finalvalue > 10) {
+	System.out.println("The final value is greater than zero");
+}
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(e);
+		}
+		
+	}
+
+5........................................................................
+
+ArrayIndexOutOfBoundsException:
+
+public class Array {
+	public static void main(String[] args) {
+		int i [] = new int[4];
+		i[0]= 30;
+		i[1]= 60;
+		i[2]= 70;
+		i[3]= 70;
+		i[4]= 70;
+		int length = i.length;
+		System.out.println(length);
+		
+		for (int j = 0; j < i.length; j++) {
+			System.out.println(i[j]);
+		}
+		
+	}
+
+}
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 4 out of bounds for length 4
+	at Array.main(Array.java:9)
+
+
+String s = " My name is ajithkumar";
+		char charAt = s.charAt(25);
+		System.out.println(charAt);
+
+Exception in thread "main" java.lang.StringIndexOutOfBoundsException: String index out of range: 25
+	at java.base/java.lang.StringLatin1.charAt(StringLatin1.java:48)
+	at java.base/java.lang.String.charAt(String.java:711)
+	at Array.main(Array.java:18)
+
+
+
